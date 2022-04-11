@@ -19,6 +19,17 @@ for (let i=1; i<=100; i++){
 
     console.log(value);
 
+    // let htmlContainer = document.getElementById("container");
+    // htmlContainer.innerHTML += `<div class="box ${valueClass}">${value}</div>`;
+
+    // Else
+
     let htmlContainer = document.getElementById("container");
-    htmlContainer.innerHTML += `<div class="box ${valueClass}">${value}</div>`;
+    let htmlElement = document.createElement("div");
+    htmlElement.innerHTML = value;
+    htmlElement.classList.add("box");
+    htmlElement.classList.add(`${valueClass}`);
+    htmlContainer.append(htmlElement);
+
+
 }
