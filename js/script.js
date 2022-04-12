@@ -28,7 +28,7 @@ for (let i=1; i<=100; i++){
     let htmlElement = document.createElement("div");
     htmlElement.innerHTML = value;
     htmlElement.classList.add("box");
-    htmlElement.classList.add(`${valueClass}`);
+    htmlElement.classList.add(valueClass);
     htmlContainer.append(htmlElement);
 
 
